@@ -1,0 +1,11 @@
+D:\Icould\NFRV\NFRV_CourseProject\NFRV_CourseProject\bin\Debug\NFRV_CourseProject.exe.config
+D:\Icould\NFRV\NFRV_CourseProject\NFRV_CourseProject\bin\Debug\NFRV_CourseProject.exe
+D:\Icould\NFRV\NFRV_CourseProject\NFRV_CourseProject\bin\Debug\NFRV_CourseProject.pdb
+D:\Icould\NFRV\NFRV_CourseProject\NFRV_CourseProject\obj\Debug\NFRV_CourseProject.csprojAssemblyReference.cache
+D:\Icould\NFRV\NFRV_CourseProject\NFRV_CourseProject\obj\Debug\NFRV_CourseProject.Properties.Resources.resources
+D:\Icould\NFRV\NFRV_CourseProject\NFRV_CourseProject\obj\Debug\NFRV_CourseProject.csproj.GenerateResource.cache
+D:\Icould\NFRV\NFRV_CourseProject\NFRV_CourseProject\obj\Debug\NFRV_CourseProject.csproj.CoreCompileInputs.cache
+D:\Icould\NFRV\NFRV_CourseProject\NFRV_CourseProject\obj\Debug\NFRV_CourseProject.exe
+D:\Icould\NFRV\NFRV_CourseProject\NFRV_CourseProject\obj\Debug\NFRV_CourseProject.pdb
+D:\Icould\NFRV\NFRV_CourseProject\NFRV_CourseProject\obj\Debug\NFRV_CourseProject.ImageForm.resources
+D:\Icould\NFRV\NFRV_CourseProject\NFRV_CourseProject\obj\Debug\NFRV_CourseProject.CustomizeForm.resources
