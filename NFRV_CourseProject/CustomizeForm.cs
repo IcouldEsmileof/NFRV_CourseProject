@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace NFRV_CourseProject
@@ -13,13 +6,13 @@ namespace NFRV_CourseProject
     public partial class CustomizeForm : Form
     {
         ImageForm imageForm;
+
         public CustomizeForm()
         {
             InitializeComponent();
-            imageForm=new ImageForm(EDitherCoefficient.n16);
+            imageForm = new ImageForm(EDitherCoefficient.n16);
             Coefficient.SelectedIndex = 4;
             Coefficient.SelectedIndex = 2;
-
         }
 
         private void RedButton_CheckedChanged(object sender, EventArgs e)
@@ -42,24 +35,22 @@ namespace NFRV_CourseProject
             imageForm.C = EColor.A;
         }
 
-        private void Coefficient_SelectedIndexChanged(object sender, EventArgs e)
+        private void Coefficient_SelectedIndexChanged(object sender,
+            EventArgs e)
         {
-            imageForm.imageProcessor.N=(EDitherCoefficient)int.Parse((string)Coefficient.SelectedItem);
-            redesignTable((int)imageForm.imageProcessor.N);
+            imageForm.imageProcessor.N =
+                (EDitherCoefficient) int.Parse(
+                    (string) Coefficient.SelectedItem);
+            RedesignTable((int) imageForm.imageProcessor.N);
         }
 
-        private void redesignTable(int n)
+        private void RedesignTable(int n)
         {
             DitherTable.Height = n * 40;
             DitherTable.Width = n * 40;
             DitherTable.ColumnCount = n;
             DitherTable.RowCount = n;
             
-
-            //for (; DitherTable.Controls.Count > 0;)
-            //{
-            //    DitherTable.Controls.RemoveAt(0);
-            //}
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < n; j++)
@@ -68,7 +59,8 @@ namespace NFRV_CourseProject
                     {
                         Label lb = new Label
                         {
-                            Text = imageForm.imageProcessor.DitherMatrix[i, j].ToString(),
+                            Text = imageForm.imageProcessor.DitherMatrix[i, j]
+                                .ToString(),
                             Width = 60
                         };
                         DitherTable.Controls.Add(lb);
@@ -77,10 +69,11 @@ namespace NFRV_CourseProject
                     }
                     else
                     {
-                        DitherTable.GetControlFromPosition(j, i).Text = imageForm.imageProcessor.DitherMatrix[i, j].ToString();
+                        DitherTable.GetControlFromPosition(j, i).Text =
+                            imageForm.imageProcessor.DitherMatrix[i, j]
+                                .ToString();
                     }
                 }
-
             }
         }
 
@@ -100,16 +93,18 @@ namespace NFRV_CourseProject
         {
             if (disposing)
             {
-                imageForm.shouldDispose = true;
+                imageForm.ShouldDispose = true;
                 imageForm.Dispose();
                 components?.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
         private void Reverse_CheckedChanged(object sender, EventArgs e)
         {
-            imageForm.imageProcessor.Reversed = !imageForm.imageProcessor.Reversed;
+            imageForm.imageProcessor.Reversed =
+                !imageForm.imageProcessor.Reversed;
         }
     }
 }

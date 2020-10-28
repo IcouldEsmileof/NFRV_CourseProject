@@ -4,7 +4,15 @@
     <projectFile>NFRV_CourseProject/NFRV_CourseProject.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="715febd7-6d10-44b2-9d5c-21ef38d4e13a" name="Default Changelist" comment="" />
+    <list default="true" id="715febd7-6d10-44b2-9d5c-21ef38d4e13a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NFRV_CourseProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NFRV_CourseProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NFRV_CourseProject/CustomizeForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NFRV_CourseProject/CustomizeForm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NFRV_CourseProject/ImageForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NFRV_CourseProject/ImageForm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NFRV_CourseProject/bin/Debug/NFRV_CourseProject.exe" beforeDir="false" afterPath="$PROJECT_DIR$/NFRV_CourseProject/bin/Debug/NFRV_CourseProject.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NFRV_CourseProject/bin/Debug/NFRV_CourseProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NFRV_CourseProject/bin/Debug/NFRV_CourseProject.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NFRV_CourseProject/obj/Debug/NFRV_CourseProject.exe" beforeDir="false" afterPath="$PROJECT_DIR$/NFRV_CourseProject/obj/Debug/NFRV_CourseProject.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NFRV_CourseProject/obj/Debug/NFRV_CourseProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NFRV_CourseProject/obj/Debug/NFRV_CourseProject.pdb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +20,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/NFRV_CourseProject/CustomizeForm.cs" />
+        <option value="$PROJECT_DIR$/NFRV_CourseProject/ImageForm.cs" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1jWFwLM8wM6vW8PrUAobaP6nz2D" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -22,6 +38,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -52,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603912179685</updated>
-      <workItem from="1603912187486" duration="320000" />
+      <workItem from="1603912187486" duration="2610000" />
     </task>
     <servers />
   </component>
@@ -63,5 +85,35 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="811" y="417" key="Github.ShareDialog" timestamp="1603912567962">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="811" y="417" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603912567962" />
+    <state x="687" y="225" key="Github.UntrackedFilesDialog" timestamp="1603912584145">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="687" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603912584145" />
+    <state width="1877" height="271" key="GridCell.Tab.0.bottom" timestamp="1603914155295">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="271" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603914155295" />
+    <state width="1877" height="271" key="GridCell.Tab.0.center" timestamp="1603914155295">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="271" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603914155295" />
+    <state width="1877" height="271" key="GridCell.Tab.0.left" timestamp="1603914155294">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="271" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603914155294" />
+    <state width="1877" height="271" key="GridCell.Tab.0.right" timestamp="1603914155295">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="271" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603914155295" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603912594642">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603912594642" />
   </component>
 </project>
