@@ -45,14 +45,8 @@ namespace NFRV_CourseProject
 
         public void DitheringImage()
         {
-            Action a = new Action[]
-            {
-                imageProcessor.DitheringProcess_R,
-                imageProcessor.DitheringProcess_G,
-                imageProcessor.DitheringProcess_B,
-                imageProcessor.DitheringProcess_A
-            }[(int) C];
-            a.Invoke();
+            
+            imageProcessor.DitheringProcess(C);
             ApplyImageTo(imageProcessor.OutMap, PB_Image_dithered);
             PB_Image_dithered.Visible = true;
         }
@@ -126,43 +120,23 @@ namespace NFRV_CourseProject
 
                 int[,] matr = new int[n, n];
                 int[,] halfMatr = DitherMaker(n / 2);
-                //kv1 (0,n/2) - (n/2,n)
+                
                 for (int i = 0; i < n / 2; i++)
                 {
                     for (int j = 0; j < n / 2; j++)
                     {
+                        //kv1 (0,n/2) - (n/2,n)
                         matr[i, j + n / 2] =
                             4 * halfMatr[i, j] + 1; //DithMatr2[0,1] = 1;
-                    }
-                }
-
-                //kv2 (0,0) - (n/2,n/2)
-                for (int i = 0; i < n / 2; i++)
-                {
-                    for (int j = 0; j < n / 2; j++)
-                    {
+                        //kv2 (0,0) - (n/2,n/2)
                         matr[i, j] =
-                            4 * halfMatr[i, j] + 3; //DithMatr2[0,0] = 3;
-                    }
-                }
-
-                //kv3 (n/2,0) - (n,n/2)
-                for (int i = 0; i < n / 2; i++)
-                {
-                    for (int j = 0; j < n / 2; j++)
-                    {
+                           4 * halfMatr[i, j] + 3; //DithMatr2[0,0] = 3;
+                        //kv3 (n/2,0) - (n,n/2)
                         matr[i + n / 2, j] =
                             4 * halfMatr[i, j] + 0; //DithMatr2[1,0] = 0;
-                    }
-                }
-
-                //kv4 (n/2,n/2) - (n,n)
-                for (int i = 0; i < n / 2; i++)
-                {
-                    for (int j = 0; j < n / 2; j++)
-                    {
+                        //kv4 (n/2,n/2) - (n,n)
                         matr[i + n / 2, j + n / 2] =
-                            4 * halfMatr[i, j] + 2; //DithMatr2[1,1] = 2;
+                           4 * halfMatr[i, j] + 2; //DithMatr2[1,1] = 2;
                     }
                 }
 
@@ -206,33 +180,25 @@ namespace NFRV_CourseProject
                 }
             }
 
-            internal void DitheringProcess_R()
+            private int getColor(Color pixel,EColor color)
             {
-                _countNf = 0;
-                _countF = 0;
-                Debug.Assert(InMap != null);
-                OutMap?.Dispose();
-                OutMap = new Bitmap(InMap);
-                for (int i = 0; i < InMap.Width; i++)
+                if(color== EColor.B)
                 {
-                    for (int j = 0; j < InMap.Height; j++)
-                    {
-                        var k = i % _n;
-                        var m = j % _n;
-                        var color =
-                            Approxim(OutMap.GetPixel(i, j).R) <
-                            DitherMatrix[k, m]
-                                ? Color.White
-                                : Color.Black;
-                        OutMap.SetPixel(i, j, color);
-                    }
+                    return pixel.B;
                 }
+                if(color ==EColor.G)
+                {
+                    return pixel.G;
+                }
+                if(color == EColor.A)
+                {
+                    return pixel.A;
+                }
+                return pixel.R;
 
-                Console.WriteLine("Count found=" + _countF);
-                Console.WriteLine("Count not found=" + _countNf);
             }
 
-            internal void DitheringProcess_B()
+            internal void DitheringProcess(EColor color)
             {
                 _countNf = 0;
                 _countF = 0;
@@ -245,64 +211,12 @@ namespace NFRV_CourseProject
                     {
                         var k = i % _n;
                         var m = j % _n;
-                        var color =
-                            Approxim(OutMap.GetPixel(i, j).B) <
+                        var new_color =
+                            Approxim(getColor(OutMap.GetPixel(i, j), color)) <
                             DitherMatrix[k, m]
                                 ? Color.White
                                 : Color.Black;
-                        OutMap.SetPixel(i, j, color);
-                    }
-                }
-
-                Console.WriteLine("Count found=" + _countF);
-                Console.WriteLine("Count not found=" + _countNf);
-            }
-
-            internal void DitheringProcess_G()
-            {
-                _countNf = 0;
-                _countF = 0;
-                Debug.Assert(InMap != null);
-                OutMap?.Dispose();
-                OutMap = new Bitmap(InMap);
-                for (int i = 0; i < InMap.Width; i++)
-                {
-                    for (int j = 0; j < InMap.Height; j++)
-                    {
-                        var k = i % _n;
-                        var m = j % _n;
-                        var color =
-                            Approxim(OutMap.GetPixel(i, j).G) <
-                            DitherMatrix[k, m]
-                                ? Color.White
-                                : Color.Black;
-                        OutMap.SetPixel(i, j, color);
-                    }
-                }
-
-                Console.WriteLine("Count found=" + _countF);
-                Console.WriteLine("Count not found=" + _countNf);
-            }
-
-            internal void DitheringProcess_A()
-            {
-                _countNf = 0;
-                _countF = 0;
-                Debug.Assert(InMap != null);
-                OutMap?.Dispose();
-                OutMap = new Bitmap(InMap);
-                for (int i = 0; i < InMap.Width; i++)
-                {
-                    for (int j = 0; j < InMap.Height; j++)
-                    {
-                        var k = i % _n;
-                        var m = j % _n;
-                        var color =
-                            Approxim(OutMap.GetPixel(i, j).A) <
-                            DitherMatrix[k, m]
-                                ? Color.White
-                                : Color.Black;
-                        OutMap.SetPixel(i, j, color);
+                        OutMap.SetPixel(i, j, new_color);
                     }
                 }
 

@@ -4,15 +4,7 @@
     <projectFile>NFRV_CourseProject/NFRV_CourseProject.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="715febd7-6d10-44b2-9d5c-21ef38d4e13a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NFRV_CourseProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NFRV_CourseProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NFRV_CourseProject/CustomizeForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NFRV_CourseProject/CustomizeForm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NFRV_CourseProject/ImageForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NFRV_CourseProject/ImageForm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NFRV_CourseProject/bin/Debug/NFRV_CourseProject.exe" beforeDir="false" afterPath="$PROJECT_DIR$/NFRV_CourseProject/bin/Debug/NFRV_CourseProject.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NFRV_CourseProject/bin/Debug/NFRV_CourseProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NFRV_CourseProject/bin/Debug/NFRV_CourseProject.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NFRV_CourseProject/obj/Debug/NFRV_CourseProject.exe" beforeDir="false" afterPath="$PROJECT_DIR$/NFRV_CourseProject/obj/Debug/NFRV_CourseProject.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NFRV_CourseProject/obj/Debug/NFRV_CourseProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NFRV_CourseProject/obj/Debug/NFRV_CourseProject.pdb" afterDir="false" />
-    </list>
+    <list default="true" id="715febd7-6d10-44b2-9d5c-21ef38d4e13a" name="Default Changelist" comment="Miner changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,8 +66,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603912179685</updated>
-      <workItem from="1603912187486" duration="2610000" />
+      <workItem from="1603912187486" duration="2757000" />
     </task>
+    <task id="LOCAL-00001" summary="Miner changes">
+      <created>1603916810568</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603916810568</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,6 +85,8 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Miner changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Miner changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="811" y="417" key="Github.ShareDialog" timestamp="1603912567962">
@@ -95,25 +97,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603912584145" />
-    <state width="1877" height="271" key="GridCell.Tab.0.bottom" timestamp="1603914155295">
+    <state width="1877" height="271" key="GridCell.Tab.0.bottom" timestamp="1603916832190">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="271" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603914155295" />
-    <state width="1877" height="271" key="GridCell.Tab.0.center" timestamp="1603914155295">
+    <state width="1877" height="271" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603916832190" />
+    <state width="1877" height="271" key="GridCell.Tab.0.center" timestamp="1603916832190">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="271" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603914155295" />
-    <state width="1877" height="271" key="GridCell.Tab.0.left" timestamp="1603914155294">
+    <state width="1877" height="271" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603916832190" />
+    <state width="1877" height="271" key="GridCell.Tab.0.left" timestamp="1603916832190">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="271" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603914155294" />
-    <state width="1877" height="271" key="GridCell.Tab.0.right" timestamp="1603914155295">
+    <state width="1877" height="271" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603916832190" />
+    <state width="1877" height="271" key="GridCell.Tab.0.right" timestamp="1603916832190">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="271" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603914155295" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603912594642">
+    <state width="1877" height="271" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603916832190" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603916812144">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603912594642" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603916812144" />
   </component>
 </project>
